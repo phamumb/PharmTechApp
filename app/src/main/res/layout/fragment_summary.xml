@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:custom="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/white">
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc_progress"
+        android:layout_width="178dp"
+        android:layout_height="166dp"
+        android:layout_weight="0.17"
+        android:background="@color/white"
+        custom:arc_angle="240"
+        custom:arc_bottom_text="SCORE"
+        custom:arc_finished_color="@color/main_color"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/date_text_view"
+        custom:arc_progress="80"
+        custom:arc_stroke_width="15dp"
+        custom:arc_text_color="@android:color/black"
+        custom:arc_unfinished_color="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/correct_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/circle"
+        android:drawablePadding="5dp"
+        android:layout_below="@+id/incorrect_score"
+        android:layout_alignLeft="@+id/incorrect_score"
+        android:layout_alignStart="@+id/incorrect_score"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/incorrect_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/circle_gray"
+        android:drawablePadding="5dp"
+        android:text="Incorrect"
+        android:layout_below="@+id/arc_progress"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="170dp"
+        android:layout_height="36dp"
+        android:text="Time"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="50dp"
+        android:layout_height="18dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="40dp"
+        android:layout_alignTop="@+id/time_text_view"
+        android:layout_alignRight="@+id/time_text_view"
+        android:layout_alignEnd="@+id/time_text_view"
+        android:layout_alignLeft="@+id/time_text_view"
+        android:layout_alignStart="@+id/time_text_view"/>
+
+</RelativeLayout>

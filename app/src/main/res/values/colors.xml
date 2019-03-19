@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFF</color>
+    <color name="colorPrimary">#4189DD</color>
+    <color name="colorPrimaryDark">#11568D</color>
+    <color name="colorprimary_light">#99E5FF</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="recycler_view">#faf8f8</color>
+    <color name="button_disable">#dadada</color>
+    <color name="grey01">#333333</color>
+    <color name="main_1">#7FD4FF</color>
+    <color name="main_2">#65BFFF</color>
+    <color name="main_3">#4CA5FF</color>
+    <color name="main_4">#3288FF</color>
+    <color name="main_color">#08beff</color>
+    <color name="correct_color">#13CE66</color>
+    <color name="incorrect_color">#CB0407</color>
+    <color name="drawer_color">#23334e</color>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    android:layout_height="100dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+
+
+        <View
+            android:id="@+id/pass_failt_color"
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@color/correct_color"/>
+
+        <TextView
+            android:id="@+id/pass_fail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/drawer_color"
+            android:text="Passed"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="50dp"
+            android:layout_below="@+id/score_text"
+            android:layout_alignRight="@+id/score_text"
+            android:layout_alignEnd="@+id/score_text"/>
+
+        <TextView
+            android:id="@+id/score_text"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="26dp"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_toRightOf="@+id/pass_failt_color"
+            android:layout_toEndOf="@+id/pass_failt_color"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"/>
+
+        <TextView
+            android:id="@+id/correct_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/time_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp"
+            android:text="17 out of 20"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="16dp"/>
+
+        <TextView
+            android:id="@+id/time_text"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/correct_text"
+            android:layout_alignStart="@+id/correct_text"
+            android:layout_centerVertical="true"
+            android:text="11:00pm"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="33dp"/>
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="190dp"
+            android:layout_height="23dp"
+            android:drawableLeft="@mipmap/ic_calendar"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="November 3,2017"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="48dp"
+            android:layout_below="@+id/pass_fail_text"
+            android:layout_toLeftOf="@+id/imageView7"
+            android:layout_toStartOf="@+id/imageView7"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow"
+            tools:layout_editor_absoluteX="312dp"
+            tools:layout_editor_absoluteY="26dp"/>
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/date_text"
+            android:layout_toStartOf="@+id/date_text">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/text1"
+                android:background="@android:color/darker_gray"/>
+        </LinearLayout>
+    </RelativeLayout>

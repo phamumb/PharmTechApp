@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.bhcc.app.pharmtech">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pill_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.bhcc.app.pharmtech.view.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".view.study.PagerActivity"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".view.filter.FilterActivity"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.study.MedicineListActivity"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.quiz.QuizActivity"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.favorites.FavoriteActivity"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".view.review.ReviewActivity"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
+
+    <!-- android:screenOrientation="portrait" -->
