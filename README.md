@@ -35,4 +35,4 @@ This project is mantained by:
 
 
 ## App Demo
-![](./images/1.png = 100x250)
+![](./images/1.png)
