@@ -35,11 +35,11 @@ This project is mantained by:
 
 
 ## App Demo
-![App](/images/1.png)
-![App](/images/2.png)
-![App](/images/3.png)
-![App](/images/4.png)
-![App](/images/5.png)
-![App](/images/6.png)
-![App](/images/7.png)
-![App](/images/8.png)
+![App](/images/1.png = 250x250)
+![App](/images/2.png = 250x250)
+![App](/images/3.png = 250x250)
+![App](/images/4.png = 250x250)
+![App](/images/5.png = 250x250)
+![App](/images/6.png = 250x250)
+![App](/images/7.png = 250x250)
+![App](/images/8.png = 250x250)
