@@ -36,3 +36,4 @@ This project is mantained by:
 
 ## App Demo
 <img src="./images/1.png" width="250">
+<img src="./images/2.png" width="250">
